@@ -6,7 +6,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Change to your frontend URL in production
+    allow_origins=["https://mixed-app-1022365474768.southamerica-east1.run.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
