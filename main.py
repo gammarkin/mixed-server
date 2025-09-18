@@ -7,7 +7,7 @@ app = FastAPI()
 # allow only your frontend origin (HTTPS)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://mixed-app-1022365474768.southamerica-east1.run.app"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
