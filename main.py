@@ -11,8 +11,4 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/")
-def read_root():
-    return {"message": "API is running"}
-
-app.include_router(todo_router.router, prefix="/todos", tags=["todos"])
+app.include_router(todo_router.router, prefix="/", tags=["index"])
